@@ -1,0 +1,122 @@
+$button-background-color: $primary-color;
+$button-background-color-hover: #478BF9;
+$button-color: #fff;
+$button-border-color: transparent;
+$button-border-color-hover: #478BF9;
+
+$button-secondary-background-color: #fff;
+$button-secondary-background-color-hover: #478BF9;
+$button-secondary-color: #001F45;
+$button-secondary-color-hover: #fff;
+$button-secondary-border-color: $primary-color;
+$button-secondary-border-color-hover: #478BF9;
+
+.button {
+  font-family: $font-button;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 16px 24px;
+  border-radius: 22px;
+  min-height: 52px;
+  min-width: 250px;
+}
+
+.button-apply {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0;
+
+  @include tablet-large {
+    position: static;
+    border-radius: 22px;
+  }
+}
+
+.button-primary {
+  background-color: $primary-color;
+  color: $button-color;
+  transition-property: background-color, border-color, color;
+  transition-duration: $transition-duration;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $button-background-color-hover;
+    border-color: $button-border-color-hover;
+    transition-property: background-color, border-color, box-shadow;
+    transition-duration: $transition-duration;
+    box-shadow: 0 0 30px #00000029;
+  }
+}
+
+.button-secondary {
+  background-color: $button-secondary-background-color;
+  border: 3px solid $button-secondary-border-color;
+  color: $button-secondary-color;
+  transition-property: background-color, border-color, color;
+  transition-duration: $transition-duration;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $button-secondary-background-color-hover;
+    border-color: $button-secondary-border-color-hover;
+    transition-property: background-color, border-color, color, box-shadow;
+    transition-duration: $transition-duration;
+    color: $button-secondary-color-hover;
+  }
+}
+
+.button-mobile {
+  display: block;
+  border-radius: 0;
+  background-color: $primary-color;
+  color: $text-color;
+  padding: 0 62px;
+
+  @include tablet-large {
+    display: none;
+  }
+}
+
+.button-scroll-to {
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 3px 5px 0;
+  margin-top: -20px;
+  right: 0;
+  border-radius: 50%;
+  background-color: $primary-color;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  transition: background-color, transform, $transition-duration;
+
+  @include tablet-large {
+    height: 80px;
+    width: 80px;
+    margin-top: -40px;
+    padding: 7px 5px 0;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $button-background-color-hover;
+    transition: background-color, transform, $transition-duration;
+    transform: translateY(-25%);
+  }
+
+  svg {
+    pointer-events: none;
+  }
+}

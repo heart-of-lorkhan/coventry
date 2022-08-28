@@ -1,0 +1,51 @@
+footer
+  button.button-scroll-to(data-scrollto="#apply")
+    <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 128 128" xml:space="preserve"><path xmlns="http://www.w3.org/2000/svg" d="M64 88a3.988 3.988 0 0 1-2.828-1.172l-40-40c-1.563-1.563-1.563-4.094 0-5.656s4.094-1.563 5.656 0L64 78.344l37.172-37.172c1.563-1.563 4.094-1.563 5.656 0s1.563 4.094 0 5.656l-40 40A3.988 3.988 0 0 1 64 88z"/></svg>
+  .footer
+    .container-md#apply
+      h2.footer__title(data-scrollspy="animate__fadeInRight") Register your interest today
+      form(action="#" method="post").form-cv
+        .form-row
+          .form-col
+            .form__group
+              textarea(name="comment" placeholder="What technology are you interested in?" required).textarea
+        .form-row
+          .form-col-2
+            .form-input
+              input(type="text" name="firstname" placeholder="First name*" required).input#firstname
+          .form-col-2
+            .form-input
+              input(type="text" name="lastname" placeholder="Last name*" required).input#lastname
+              .form-input
+
+          .form-col
+            .form__group
+              .form-input
+                input(type="email" name="Email" placeholder="Email adress*" required).input#email
+          .form-col
+            .form__group
+              .form-input
+                input(type="phone" name="tel" placeholder="Telephone number*" required).input#tel
+          .form-col
+            .form__group 
+              input(type="file" id="upload file" name="upload").form-upload
+              label(for="upload file").label-upload Upload your CV here (optional)
+          .form-col
+            .form__checkbox(data-scrollspy="animate__fadeInDown")
+              label.checkbox.option(for="checkbox2")
+                input.checkbox__input#checkbox2(type='checkbox')
+                span.checkbox__box
+                span ​​I acknowledge and give permission for my data to be help by Coventry Building Society and WeLove9am in accordance with General Data Protection Regulation.
+          .form-col
+            .form__button-apply
+              button(type="submit" value="apply now" name="submit").button.button-primary#apply Register your interest
+      .footer__logo
+        img(
+          src="img/logo.svg" 
+          alt="Coventry Building Society."
+          data-scrollspy="animate__fadeInLeft"
+          width="240"
+          height="76"
+          )
+
+      .copyright(data-scrollspy="animate__fadeInLeft") &copy; WeLove9am 2022

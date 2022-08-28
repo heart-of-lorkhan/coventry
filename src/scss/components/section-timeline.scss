@@ -1,0 +1,33 @@
+.section-timeline {
+  overflow: hidden;
+  background-position: top center;
+  padding-bottom: 0;
+
+  @include tablet {
+    padding-bottom: 60px;
+  }
+}
+
+.section-timeline-container {
+  padding-left: 30px !important;
+
+  @include tablet {
+    padding-left: 240px !important;
+    padding-right: 240px;
+  }
+}
+
+.section-timeline__title {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+
+  span {
+    margin-right: 26px;
+    margin-left: 26px;
+    line-height: 1.5;
+  }
+}

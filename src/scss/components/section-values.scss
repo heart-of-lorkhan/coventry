@@ -1,0 +1,25 @@
+.section-values {
+  color: #fff;
+  padding-bottom: 0;
+
+  h2 {
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: center;
+  }
+
+  .container {
+    @media (max-width: 768px) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+.section-values__title {
+  font-size: 30px;
+  font-weight: 400;
+  @include desktop {
+    font-size: 50px;
+  }
+}

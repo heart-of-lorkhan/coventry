@@ -1,0 +1,140 @@
+.footer {
+  z-index: 1;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: #ffffff;
+
+  @include tablet {
+    padding-top: 55px;
+    padding-bottom: 45px;
+  }
+}
+
+.footer__logo {
+  margin-top: 65px;
+  margin-bottom: 32px;
+  text-align: center;
+
+  img {
+    width: 300px;
+    height: 81px;
+  }
+
+  @include tablet {
+    img {
+      width: 380px;
+      height: 81px;
+    }
+  }
+}
+
+.footer__title {
+  font-weight: 700;
+  color: $primary-color;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 16px;
+  letter-spacing: 0;
+  padding: 0 12px;
+  margin-top: 24px;
+
+  @include tablet {
+    font-size: 36px;
+    padding: 0;
+  }
+
+  @include desktop {
+    margin-bottom: 38px;
+  }
+}
+
+.footer__subtitle {
+  font-weight: 400;
+  color: $text-color;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 28px;
+  padding: 0 12px;
+
+  @include tablet {
+    font-size: 26px;
+    margin-bottom: 69px;
+    padding: 0;
+  }
+}
+
+.footer__link {
+  font-weight: 400;
+  color: $text-color;
+}
+
+.copyright {
+  color: $secondary-color;
+  font-size: 16px;
+  text-align: center;
+}
+
+.footer-decoration {
+  display: none;
+  position: absolute;
+  top: 200px;
+  left: 0;
+
+  @media (min-width: 1366px) {
+    display: block;
+  }
+
+  .bee {
+    position: relative;
+    top: 59px;
+    left: -12px;
+    fill: #fff;
+    stroke: none;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+  }
+
+  .line {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2px;
+    stroke-dasharray: 10;
+  }
+
+  .line2 {
+    fill: none;
+    stroke-width: 4px;
+    stroke: #c5001f;
+    stroke-dasharray: 160%;
+    stroke-dashoffset: 0;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+
+    &.dash2 {
+      opacity: 1;
+    }
+  }
+}
+
+@keyframes dash2 {
+  to {
+    stroke-dashoffset: -160%;
+  }
+}
+
+.dash2 {
+  animation-name: dash2;
+}
+.footer__logo {
+  width: 247px;
+  height: 77px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  @include desktop {
+    margin-bottom: 58px;
+  }
+}

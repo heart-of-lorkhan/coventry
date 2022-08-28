@@ -1,0 +1,19 @@
+.section {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section-images {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include tablet {
+    padding-top: 0;
+    padding-bottom: 0px;
+  }
+}
+
+.section-background {
+  background-size: 100%;
+}

@@ -1,0 +1,109 @@
+@import "variables";
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  min-width: 320px;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  color: $text-color;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+button:not([disabled]),
+a[role="button"]:not([disabled]) {
+  cursor: pointer;
+}
+
+fieldset {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+svg {
+  width: inherit;
+  height: inherit;
+  fill: currentColor;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+[data-scrollspy] {
+  opacity: 0;
+}
+
+.section-title {
+  font-weight: 400;
+  color: $text-color;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 1.4;
+  margin-bottom: 0;
+  font-size: 28px;
+  color: #fff;
+
+  @include tablet-large {
+    font-size: 42px;
+  }
+
+  @include desktop {
+    font-size: 50px;
+  }
+}

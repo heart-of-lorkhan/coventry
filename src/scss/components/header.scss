@@ -1,0 +1,46 @@
+.header__logo {
+  width: 170px;
+
+  @include tablet {
+    width: 258px;
+  }
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 1830px;
+
+  @include tablet-large {
+    justify-content: space-between;
+  }
+}
+
+.header__buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.header {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 1px 1px #ffffff;
+}
+
+.header__inner {
+  padding-bottom: 0;
+  padding-top: 0;
+
+  @include tablet {
+    padding-bottom: 12px;
+    padding-top: 12px;
+  }
+}

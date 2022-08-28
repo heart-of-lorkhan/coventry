@@ -1,0 +1,19 @@
+extends pug/base
+
+prepend vars
+  //-
+  - title = 'Coventry Building Society'
+
+append vars
+  //-
+
+block content
+  main.main
+    include ./pug/components/section-intro.pug
+    .section-background(style="background-image: url(img/microchip.jpg)")
+      include ./pug/components/section-jobs.pug
+      include ./pug/components/section-data.pug
+      include ./pug/components/section-experts.pug
+      include ./pug/components/section-values.pug
+      include ./pug/components/section-timeline.pug
+    include ./pug/components/section-image.pug

@@ -1,0 +1,75 @@
+.section-jobs {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #fff;
+  background-size: cover;
+
+  @include desktop {
+    padding-top: 96px;
+    padding-bottom: 0;
+  }
+}
+
+.section-jobs__block {
+  &:not(:last-child) {
+    margin-bottom: 42px;
+  }
+}
+
+.section-jobs__actions {
+  text-align: center;
+}
+
+.jobs-list-item {
+  font-size: 22px;
+  list-style-type: none;
+  color: $text-color;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+
+  @include tablet {
+    font-size: 26px;
+  }
+
+  @include tablet-large {
+    font-size: 30px;
+  }
+
+  @include desktop {
+    font-size: 50px;
+  }
+}
+
+.jobs-text {
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0;
+  margin-top: 32px;
+  margin-bottom: 40px;
+  padding: 0 16px;
+
+  @include tablet {
+    font-size: 24px;
+  }
+
+  @include desktop {
+    font-size: 30px;
+    padding: 0 150px;
+  }
+}
+.jobs-text:not(first-child) {
+  margin-bottom: 40px;
+}
+
+.jobs-list {
+  margin-bottom: 18px;
+
+  @include desktop {
+    margin-bottom: 28px;
+  }
+}
+
+.jobs-text .section-title:nth-child(1) {
+  margin-bottom: 36px;
+}

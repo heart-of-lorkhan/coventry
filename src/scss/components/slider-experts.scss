@@ -1,0 +1,11 @@
+.slider-experts {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include tablet {
+    padding-top: 25px;
+  }
+}

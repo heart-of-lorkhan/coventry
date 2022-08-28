@@ -1,0 +1,72 @@
+mixin card(src, srcset, name, position, text, buttonText, titleBack, imgBack, video, videoIndex)
+  .card
+    .card__body
+      .card__front
+        img(src=src srcset=srcset alt="Elliot's portrait." width="159" height="159").card__front-photo 
+        h3.card__front-title= name
+        h4.card__front-subtitle= position
+        p.card__info= text
+        button.button.button-secondary= buttonText
+      .card__back 
+        .card__back-title= titleBack
+        button.card__video-thumb(data-video= video data-video-index= videoIndex)
+          img(src=imgBack alt=name width="374" height="290").card__video-thumb-image
+          .card__video-thumb-icon
+            <svg xmlns="http://www.w3.org/2000/svg" width="19.784" height="19.044" viewBox="0 0 21.784 22.044"><path data-name="Polygon 3" d="m6.591 3.806 13.192 7.626L6.6 19.042Z"/></svg>
+        button.button.button-secondary Go Back
+
+mixin cardValue(title, text)
+  .slide-value 
+    .slide-value__titles
+      h3.slide-value__title Define your future 
+      h4.slide-value__subtitle= title
+    .slide-value__text
+      p= text
+
+section.section.section-experts
+  .scroll-progress
+  .container
+    h2.section-experts__title(data-scrollspy="animate__fadeInLeft") Work with like-minded experts
+
+    .slider-experts.swiper
+      .swiper-wrapper
+        .swiper-slide
+          +card(
+            'img/Elliott.jpg',
+            'img/Elliott.jpg, img/Elliott@2x.jpg 2x',
+            'Elliott',
+            'Apprentice Software Developer',
+            'After finding out about the role from his girlfriend, Elliott joined as an apprentice and is now gaining his degree while working in the department.',
+            'Watch Elliott',
+            'Meet Elliott',
+            'img/elliott-back.jpg',
+            './video/video1.mp4',
+            0
+            )
+        .swiper-slide
+          +card(
+            'img/Helen.jpg',
+            'img/Helen.jpg, img/Helen@2x.jpg 2x',
+            'Helen',
+            'SCRUM Master',
+            'Following a long career in engineering and development, Helen was looking for somewhere where she could do things her way…',
+            'Watch Helen',
+            'Meet Helen',
+            'img/helen-back.jpg',
+            './video/video2.mp4',
+            1
+            )
+        .swiper-slide
+          +card(
+            'img/Mike.jpg',
+            'img/Mike.jpg, img/Mike@2x.jpg 2x',
+            'Mike',
+            'Software Engineer',
+            'With most of his working life spent as a contractor, Mike wanted somewhere to settle down. Luckily, Coventry Building Soceity turned out to be the friendliest place he’s worked in!',
+            'Watch Mike',
+            'Meet Mike',
+            'img/mike-back.jpg',
+            './video/video3.mp4',
+            2
+            )
+      .swiper-pagination(data-scrollspy="animate__fadeInUp")

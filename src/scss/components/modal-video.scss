@@ -1,0 +1,93 @@
+.modal-video {
+  width: 1366px;
+  max-width: 100%;
+  height: 90vh;
+  margin: 0 auto;
+
+  @include tablet {
+    height: 780px;
+  }
+}
+
+.video-js .vjs-control {
+  z-index: 1;
+}
+
+.video-js .vjs-control-bar {
+  background-color: rgba(0, 31, 69, 1);
+}
+
+.video-js .vjs-play-progress {
+  background-color: $primary-color;
+}
+
+.video-js .vjs-load-progress {
+  background: #fff;
+}
+
+.video-js .vjs-volume-panel {
+  order: 1;
+}
+
+.video-js .vjs-play-control {
+  order: -1;
+  width: 25px;
+  font-size: 11px;
+}
+
+.vjs-prev-video-button {
+  order: -2;
+  width: 25px;
+
+  svg {
+    width: 18px;
+  }
+}
+
+.vjs-next-video-button {
+  order: -1;
+  width: 25px;
+
+  svg {
+    width: 18px;
+  }
+}
+
+.mfp-close-btn-in .mfp-close {
+  z-index: 1;
+}
+
+.mfp-inline-holder .mfp-content,
+.mfp-ajax-holder .mfp-content {
+  width: 1366px;
+  max-width: 100%;
+}
+
+.mfp-close {
+  top: 18px;
+  right: 18px;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  opacity: 1;
+  padding: 0;
+  cursor: pointer;
+
+  &:hover {
+    svg {
+      fill: $primary-color;
+      transition-property: fill;
+      transition-duration: $transition-duration;
+    }
+  }
+
+  svg {
+    fill: $secondary-color;
+    transition-property: fill;
+    transition-duration: $transition-duration;
+  }
+}
+
+.mfp-close:active {
+  top: 18px;
+}

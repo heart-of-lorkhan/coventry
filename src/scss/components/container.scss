@@ -1,0 +1,52 @@
+.container {
+  min-width: 320px;
+  max-width: 1920px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  @include tablet-large {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  @include desktop-lg {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+}
+
+.container-hero {
+  position: relative;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  @include tablet-large {
+    max-width: 800px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  @include desktop {
+    max-width: 1200px;
+  }
+
+  @include desktop-md {
+    max-width: 1200px;
+  }
+}
+
+.container-fluid {
+  min-width: 320px;
+  max-width: 1920px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-md {
+  padding-right: 18px;
+  padding-left: 18px;
+}

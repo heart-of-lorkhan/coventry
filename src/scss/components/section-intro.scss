@@ -1,0 +1,144 @@
+.section-intro {
+  background-size: cover !important;
+  padding-top: 160px;
+  min-height: 470px;
+  color: #fff;
+
+  @include tablet {
+    min-height: 700px;
+  }
+
+  @include desktop {
+    height: calc(100vh - 117px);
+    padding-top: 290px;
+  }
+}
+
+
+.intro-title {
+  background-color: $primary-color;
+  font-weight: 400;
+  letter-spacing: 2px;
+  display: inline-block;
+  font-family: $font-family !important;
+  margin-bottom: 0;
+  font-size: 32px;
+  padding: 4px 10px 2px 16px;
+
+  @include tablet-large {
+    font-size: 60px;
+    padding: 4px 10px 2px 28px;
+  }
+
+  @include desktop {
+    font-size: 90px;
+    padding-left: 30px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    padding-right: 25px;
+  }
+
+  ul {
+    display: inline-block;
+  }
+
+  li {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    transition-property: opacity;
+    transition-duration: $transition-duration;
+
+    &.active {
+      opacity: 1;
+      transition-property: opacity;
+      transition-duration: $transition-duration;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-width: 70px;
+    min-height: 30px;
+    text-align: center;
+
+    @include tablet-large {
+      min-width: 140px;
+      min-height: 57px;
+    }
+
+    @include desktop {
+      min-width: 180px;
+      min-height: 85px;
+    }
+
+    li {
+      text-align: center;
+    }
+  }
+}
+
+.intro-subtitle {
+  background-color: #fff;
+  color: $primary-color;
+  display: inline-block;
+  font-family: $font-family !important;
+  letter-spacing: 0;
+  border: $primary-color 3px solid;
+  margin-bottom: 12px;
+  padding: 6px 6px 6px 14px;
+  font-size: 22px;
+  font-weight: 400;
+
+  @include tablet-large {
+    padding: 6px 6px 6px 26px;
+    font-size: 38px;
+  }
+  @include desktop {
+    font-size: 44px;
+    padding: 14px 51px 17px 34px;
+    margin-bottom: 24px;
+  }
+}
+
+.intro-text {
+  padding-left: 25px;
+  @include tablet {
+    padding-left: 40px;
+  }
+  @include tablet-large {
+    padding-left: 174px;
+  }
+  @include desktop {
+    padding-left: 240px;
+  }
+}
+
+.intro-motto {
+  font-weight: 400;
+  margin-bottom: 0;
+  font-size: 20px;
+
+  @include tablet {
+    font-size: 30px;
+  }
+
+  @include desktop {
+    font-size: 40px;
+  }
+}
+
+@keyframes fadeInWord {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

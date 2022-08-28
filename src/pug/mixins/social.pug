@@ -1,0 +1,6 @@
+mixin social(data)
+  +b('ul').social(class!=attributes.class)
+    each item in data
+      +e.item
+        +e('a')(href=item.href ? item.href : '#' target="_blank" rel="noopener noreferrer").link
+          img(src=item.src alt="social icon" width="52" height="52")

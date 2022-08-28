@@ -1,0 +1,28 @@
+mixin cardValue(title, text)
+  .slide-value 
+    .slide-value__titles
+      h3.slide-value__title Define your future 
+      h4.slide-value__subtitle= title
+    .slide-value__text
+      p= text
+
+section.section.section-values
+  .scroll-progress
+  .container
+    h2.section-values__title Our values stand the test of time
+    .slider-values.swiper(data-scrollspy="animate__fadeInUp")
+      .swiper-wrapper
+        .swiper-slide
+          +cardValue('by caring', 'We have a genuine passion for our work and our teams.')
+        .swiper-slide
+          +cardValue('being ambitious', 'We don’t settle for good enough')
+        .swiper-slide
+          +cardValue('being responsible', 'We always question our actions and their outcomes')
+        .swiper-slide
+          +cardValue('being empowered', 'We make sure everyone has a valued voice')
+        .swiper-slide
+          +cardValue('being straightforward', 'We cut down the jargon and make things easier')
+      .swiper-button-prev
+        <svg xmlns="http://www.w3.org/2000/svg" width="20.167" height="20.167" viewBox="0 0 14.167 20.167"><g data-name="Group 499"><path data-name="Path 1" d="M10.083 19.46.707 10.084 10.083.708" fill="none" stroke="#fff" stroke-linecap="round"/></g></svg>
+      .swiper-button-next
+        <svg xmlns="http://www.w3.org/2000/svg" width="20.167" height="20.167" viewBox="6 0 14.167 20.167"><g data-name="Group 500"><path data-name="Path 1" d="m10.084 19.46 9.376-9.376L10.084.708" fill="none" stroke="#fff" stroke-linecap="round"/></g></svg>

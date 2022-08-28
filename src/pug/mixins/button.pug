@@ -1,0 +1,3 @@
+mixin button(tag, text)
+    +b(tag).button(href=(tag == 'a' ? 'javascript:void(0);' : false) title=(tag == 'a' ? text : false))&attributes(attributes) #{text}
+        block

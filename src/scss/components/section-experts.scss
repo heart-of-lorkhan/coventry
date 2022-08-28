@@ -1,0 +1,23 @@
+.section-experts {
+  padding-bottom: 0 !important;
+  background-size: 100% !important;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  @include tablet {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  .h2 {
+    text-align: center;
+    color: #fff;
+  }
+}
+
+.section-experts__title {
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+}

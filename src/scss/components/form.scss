@@ -1,0 +1,227 @@
+.input {
+  width: 100%;
+  height: 44px;
+  padding: 8px 24px;
+  outline: 0;
+  border: 2px solid transparent;
+  transition-duration: $transition-duration;
+  transition-property: background-color;
+  color: $secondary-color;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 22px;
+  background-color: #E8F0FE;
+
+  &:focus,
+  &:hover,
+  &:active {
+    border-color: $primary-color;
+    transition-duration: $transition-duration;
+    transition-property: border-color;
+  }
+}
+
+.input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: $secondary-color;
+  letter-spacing: 0;
+  margin-left: 60px;
+}
+
+.textarea::placeholder {
+  font-size: 16px;
+  color: $secondary-color;
+}
+
+.input-upload {
+  display: none;
+}
+
+.label-upload {
+  display: flex;
+  color: $secondary-color;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 24px;
+  width: 100%;
+  min-height: 152px;
+  border: 2px solid transparent;
+  margin-bottom: 25px;
+  cursor: pointer;
+  background-color: #F2F3F5;
+  transition-property: background-color, border-color, color;
+  transition-duration: $transition-duration;
+  letter-spacing: 0;
+  border-radius: 22px;
+
+  &:focus,
+  &:hover,
+  &:active {
+    border-color: $primary-color;
+    transition-property: background-color, border-color, color;
+    transition-duration: $transition-duration;
+  }
+
+  @include tablet {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+.label-bold {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 0;
+
+  @include tablet {
+    margin-bottom: 16px;
+  }
+}
+
+.label {
+  color: $secondary-color;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  display: inline-block;
+
+  @include tablet {
+    font-size: 16px;
+  }
+}
+
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  font-size: 16px;
+  font-weight: 600;
+  color: $secondary-color;
+}
+
+.input-checkbox {
+  width: 27px;
+  height: 27px;
+  border-radius: 5px;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.form-cv {
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+
+  @include tablet {
+    max-width: 920px;
+    padding: 0 144px;
+    margin-bottom: 0;
+  }
+}
+
+.form-input {
+  margin-bottom: 25px;
+
+  @include tablet {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+.form__group {
+  margin-bottom: 25px;
+
+  @include tablet {
+    margin-bottom: 50px;
+  }
+}
+
+.form__button-apply .button {
+  margin: 0 auto;
+
+  @include tablet {
+    padding: 11px 25px;
+  }
+}
+
+.form-col {
+  width: 100%;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.form-col-2 {
+  width: 100%;
+  padding-right: 16px;
+  padding-left: 16px;
+
+  @include tablet {
+    width: 50%;
+  }
+}
+
+.form-row {
+  margin-right: -12px;
+  margin-left: -12px;
+  padding-right: 12px;
+  padding-left: 12px;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.form__checkbox {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 8px;
+  margin-bottom: 42px;
+
+  @include tablet {
+    margin-bottom: 64px;
+  }
+}
+
+.form__button-apply {
+  display: flex;
+  justify-content: center;
+  box-shadow: none;
+  margin-bottom: 24px;
+
+  @include tablet-large {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.form-button-request {
+  margin-top: 40px;
+
+  @include tablet {
+    margin-top: 0;
+  }
+}
+
+.textarea {
+  width: 100%;
+  min-height: 246px;
+  padding: 24px;
+  outline: 0;
+  background-color: #E8F0FE;
+  border: 2px solid transparent;
+  border-radius: 22px;
+
+  &:focus,
+  &:hover,
+  &:active {
+    border-color: $primary-color;
+    transition-duration: $transition-duration;
+    transition-property: border-color;
+  }
+}
+
+.form-upload {
+  display: none;
+}
